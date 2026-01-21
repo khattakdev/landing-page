@@ -177,15 +177,15 @@ Bryntum Gantt offers six built-in themes, each available in both light and dark 
 
 | Svalbard Light | Stockholm Dark |
 |----------------|----------------|
-| ![Svalbard Light](https://bryntum.com/products/grid/docs/data/Grid/images/themes/thumb.svalbard-light.png) | ![Stockholm Dark](https://bryntum.com/products/grid/docs/data/Grid/images/themes/thumb.stockholm-dark.png) |
+| ![Svalbard Light](https://bryntum.com/products/gantt/docs/data/Gantt/images/themes/thumb.svalbard-light.png) | ![Stockholm Dark](https://bryntum.com/products/gantt/docs/data/Gantt/images/themes/thumb.stockholm-dark.png) |
 
 | Visby Light | Material 3 Dark |
 |------------|----------------|
-| ![Visby Light](https://bryntum.com/products/grid/docs/data/Grid/images/themes/thumb.visby-light.png) | ![Material 3 Dark](https://bryntum.com/products/grid/docs/data/Grid/images/themes/thumb.material3-dark.png) |
+| ![Visby Light](https://bryntum.com/products/gantt/docs/data/Gantt/images/themes/thumb.visby-light.png) | ![Material 3 Dark](https://bryntum.com/products/gantt/docs/data/Gantt/images/themes/thumb.material3-dark.png) |
 
 | High Contrast Light | Fluent 2 Dark |
 |--------------------|----------------|
-| ![High Contrast Light](https://bryntum.com/products/grid/docs/data/Grid/images/themes/thumb.high-contrast-light.png) | ![Fluent 2 Dark](https://bryntum.com/products/grid/docs/data/Grid/images/themes/thumb.fluent2-dark.png) |
+| ![High Contrast Light](https://bryntum.com/products/gantt/docs/data/Gantt/images/themes/thumb.high-contrast-light.png) | ![Fluent 2 Dark](https://bryntum.com/products/gantt/docs/data/Gantt/images/themes/thumb.fluent2-dark.png) |
 
 Learn more about [theming and customization](https://bryntum.com/products/gantt/docs/guide/Gantt/customization/styling).
 
