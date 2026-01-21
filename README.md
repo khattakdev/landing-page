@@ -2,13 +2,13 @@
   <a href="https://bryntum.com/" rel="noopener" target="_blank"><img width="200" src="https://bryntum.com/wp-content/uploads/2022/11/RGB_Bryntum-Logo-Blue-1.svg" alt="Bryntum logo"></a>
 </p>
 
-<h1 align="center">Bryntum Grid</h1>
+<h1 align="center">Bryntum Gantt</h1>
 
-Bryntum Grid is a high performance JavaScript data grid component. It integrates smoothly with React, Vue, Angular, or plain vanilla JS.
+Bryntum Gantt is a full featured Gantt chart for project management with support for a big amount of features. It integrates smoothly with React, Vue, Angular, or plain vanilla JS.
 
-For more information about Bryntum Grid, visit the [Bryntum Grid site](https://bryntum.com/products/grid/)
+For more information about Bryntum Gantt, visit the [Bryntum Gantt site](https://bryntum.com/products/gantt/)
 
-<img src="https://bryntum.com/products/grid/docs/data/Grid/images/getting-started-result.png" alt="Bryntum Grid Screenshot">
+<img src="https://bryntum.com/products/gantt/docs/data/Gantt/images/getting-started-result.png" alt="Bryntum Gantt Screenshot">
 
 ## Key Features
 
@@ -23,17 +23,17 @@ For more information about Bryntum Grid, visit the [Bryntum Grid site](https://b
 
 Explore our comprehensive collection of demos:
 
-* [View Online Demos](https://bryntum.com/products/grid/examples/)
-* [JavaScript Demos](https://bryntum.com/products/grid/examples/?framework=javascript)
-* [React Demos](https://bryntum.com/products/grid/examples/?framework=react)
-* [Vue Demos](https://bryntum.com/products/grid/examples/?framework=vue)
-* [Angular Demos](https://bryntum.com/products/grid/examples/?framework=angular)
+* [View Online Demos](https://bryntum.com/products/gantt/examples/)
+* [JavaScript Demos](https://bryntum.com/products/gantt/examples/?framework=javascript)
+* [React Demos](https://bryntum.com/products/gantt/examples/?framework=react)
+* [Vue Demos](https://bryntum.com/products/gantt/examples/?framework=vue)
+* [Angular Demos](https://bryntum.com/products/gantt/examples/?framework=angular)
 
 ## Bryntum repository access setup
 
 This npm package requires access to the private Bryntum npm repository. You must be logged in as a licensed or trial user to install it.
 
-Please check the [npm repository guide](https://bryntum.com/products/grid/docs/guide/Grid/npm-repository) for detailed information on the sign-up/login process.
+Please check the [npm repository guide](https://bryntum.com/products/gantt/docs/guide/Gantt/npm-repository) for detailed information on the sign-up/login process.
 
 ## Installation
 
@@ -45,7 +45,7 @@ command depends on the package manager used by the application.
 Install using `npm`:
 
 ```shell
-npm install @bryntum/grid@7.1.1
+npm install @bryntum/gantt@7.1.1
 ```
 
 ### Framework Wrappers
@@ -53,19 +53,19 @@ npm install @bryntum/grid@7.1.1
 #### React
 
 ```shell
-npm install @bryntum/grid-react@7.1.1
+npm install @bryntum/gantt-react@7.1.1
 ```
 
 #### Vue 3
 
 ```shell
-npm install @bryntum/grid-vue-3@7.1.1
+npm install @bryntum/gantt-vue-3@7.1.1
 ```
 
 #### Angular
 
 ```shell
-npm install @bryntum/grid-angular@7.1.1
+npm install @bryntum/gantt-angular@7.1.1
 ```
 
 ## Quick Start
@@ -73,74 +73,68 @@ npm install @bryntum/grid-angular@7.1.1
 ### Vanilla JavaScript
 
 ```javascript
-import { Grid } from '@bryntum/grid';
+import { Gantt } from '@bryntum/gantt';
 import './style.css';
 
-const grid = new Grid({
-    appendTo : 'app',
-    columns : [
-        {
-            text   : 'Name',
-            field  : 'name',
-            flex   : 1,
-            editor : {
-                type     : 'textfield',
-                required : true
-            }
-        }, {
-            text  : 'Age',
-            field : 'age',
-            width : 100,
-            type  : 'number'
-        }, {
-            text  : 'City',
-            field : 'city',
-            flex  : 1
-        }, {
-            text  : 'Food',
-            field : 'food',
-            flex  : 1
-        }, {
-            text     : 'Color',
-            field    : 'color',
-            width    : 80,
-            type     : 'color',
-            renderer : ({ cellElement, value }) => {
-                cellElement.style.color = value;
-                cellElement.style.fontWeight = '700';
-                return value;
-            }
-        }
+const gantt = new Gantt({
+    appendTo  : 'app',
+    startDate : new Date(2022, 0, 1),
+    endDate   : new Date(2022, 0, 10),
+    columns   : [
+        { type : 'name', width : 160 }
     ],
+    project : {
 
-    data : [
-        { id : 1, name : 'Don A Taylor', age : 30, city : 'Moscow', food : 'Salad', color : 'Black' },
-        { id : 2, name : 'John B Adams', age : 65, city : 'Paris', food : 'Bolognese', color : 'Orange' },
-        { id : 3, name : 'John Doe', age : 40, city : 'London', food : 'Fish and Chips', color : 'Blue' },
-        { id : 4, name : 'Maria Garcia', age : 28, city : 'Madrid', food : 'Paella', color : 'Green' },
-        { id : 5, name : 'Li Wei', age : 35, city : 'Beijing', food : 'Dumplings', color : 'Yellow' },
-        { id : 6, name : 'Sara Johnson', age : 32, city : 'Sydney', food : 'Sushi', color : 'Purple' },
-        { id : 7, name : 'Lucas Brown', age : 22, city : 'Toronto', food : 'Poutine', color : 'Orange' },
-        { id : 8, name : 'Emma Wilson', age : 27, city : 'Paris', food : 'Croissant', color : 'Pink' },
-        { id : 9, name : 'Ivan Petrov', age : 45, city : 'St. Petersburg', food : 'Borscht', color : 'Grey' },
-        { id : 10, name : 'Zhang Ming', age : 50, city : 'Shanghai', food : 'Hot Pot', color : 'Purple' },
-        { id : 11, name : 'Sophia Martinez', age : 20, city : 'Mexico City', food : 'Tacos', color : 'Crimson' },
-        { id : 12, name : 'Noah Smith', age : 55, city : 'Cape Town', food : 'Biltong', color : 'Turquoise' },
-        { id : 13, name : 'Isabella Jones', age : 33, city : 'Rio de Janeiro', food : 'Feijoada', color : 'Magenta' },
-        { id : 14, name : 'Ethan Taylor', age : 29, city : 'Chicago', food : 'Deep-Dish Pizza', color : 'Cyan' },
-        { id : 15, name : 'Olivia Brown', age : 37, city : 'Berlin', food : 'Schnitzel', color : 'Maroon' },
-        { id : 16, name : 'Mia Wilson', age : 26, city : 'Rome', food : 'Pasta', color : 'Olive' },
-        { id : 17, name : 'Jacob Miller', age : 60, city : 'Amsterdam', food : 'Stroopwafel', color : 'Lime' },
-        { id : 18, name : 'Chloe Davis', age : 23, city : 'Los Angeles', food : 'Burger', color : 'Teal' },
-        { id : 19, name : 'Aiden Martinez', age : 48, city : 'Buenos Aires', food : 'Asado', color : 'Violet' },
-        { id : 20, name : 'Liam Lee', age : 38, city : 'Seoul', food : 'Kimchi', color : 'Indigo' },
-        { id : 21, name : 'Sophie Kim', age : 21, city : 'Tokyo', food : 'Ramen', color : 'Pink' },
-        { id : 22, name : 'Alexander Nguyen', age : 41, city : 'Hanoi', food : 'Pho', color : 'Coral' },
-        { id : 23, name : 'Ella Patel', age : 19, city : 'Mumbai', food : 'Curry', color : 'Amber' },
-        { id : 24, name : 'James O Connor', age : 34, city : 'Dublin', food : 'Irish Stew', color : 'Green' },
-        { id : 25, name : 'Isabelle Chen', age : 31, city : 'Hong Kong', food : 'Dim Sum', color : 'Brown' }
-    ]
-
+        // Automatically introduces a `startnoearlier` constraint for tasks that (a) have no predecessors,
+        // (b) do not use constraints and (c) aren't `manuallyScheduled`
+        autoSetConstraints : true,
+        tasks              : [
+            {
+                id       : 1,
+                name     : 'Documentation Project',
+                expanded : true,
+                children : [
+                    {
+                        id       : 2,
+                        name     : 'Preparation',
+                        expanded : true,
+                        children : [
+                            { id : 6, name : 'Proof-read docs', startDate : '2026-01-02', endDate : '2026-01-09' },
+                            { id : 3, name : 'Release docs', startDate : '2026-01-09', endDate : '2026-01-10' }
+                        ]
+                    },
+                    {
+                        id       : 4,
+                        name     : 'Development',
+                        expanded : true,
+                        children : [
+                            { id : 7, name : 'Write API docs', startDate : '2026-01-05', endDate : '2026-01-12' },
+                            { id : 8, name : 'Write tutorials', startDate : '2026-01-10', endDate : '2026-01-16' },
+                            { id : 9, name : 'Create examples', startDate : '2026-01-12', endDate : '2026-01-18' }
+                        ]
+                    },
+                    {
+                        id       : 5,
+                        name     : 'Review & Release',
+                        expanded : true,
+                        children : [
+                            { id : 10, name : 'Team review', startDate : '2026-01-18', endDate : '2026-01-20' },
+                            { id : 11, name : 'Final approval', startDate : '2026-01-20', endDate : '2026-01-21' },
+                            { id : 12, name : 'Public release', startDate : '2026-01-22', endDate : '2026-01-22' }
+                        ]
+                    }
+                ]
+            }
+        ],
+        dependencies : [
+            { fromTask : 6, toTask : 3 },
+            { fromTask : 7, toTask : 8 },
+            { fromTask : 8, toTask : 9 },
+            { fromTask : 9, toTask : 10 },
+            { fromTask : 10, toTask : 11 },
+            { fromTask : 11, toTask : 12 }
+        ]
+    }
 });
 ```
 
@@ -148,15 +142,15 @@ In the `style.css`:
 
 ```css
 /* FontAwesome is used for icons */
-@import "@bryntum/grid/fontawesome/css/fontawesome.css";
-@import "@bryntum/grid/fontawesome/css/solid.css";
+@import "@bryntum/gantt/fontawesome/css/fontawesome.css";
+@import "@bryntum/gantt/fontawesome/css/solid.css";
 /* Structural CSS */
-@import "@bryntum/grid/grid.css";
+@import "@bryntum/gantt/gantt.css";
 /* Bryntum theme of your choice */
-@import "@bryntum/grid/svalbard-light.css";
+@import "@bryntum/gantt/svalbard-light.css";
 ```
 
-Visit our JavaScript [Quick Start guide](https://bryntum.com/products/grid/docs/guide/Grid/quick-start/javascript-npm) to learn more.
+Visit our JavaScript [Quick Start guide](https://bryntum.com/products/gantt/docs/guide/Gantt/quick-start/javascript-npm) to learn more.
 
 ## Framework Integrations
 
@@ -167,12 +161,12 @@ Bryntum Grid provides first-class wrappers for popular frameworks:
 
 Each wrapper follows native framework patterns and lifecycle management.
 
-Visit our [Reat](https://bryntum.com/products/grid/docs/guide/Grid/quick-start/react), [Angular](https://bryntum.com/products/grid/docs/guide/Grid/quick-start/angular) 
-and [Vue](https://bryntum.com/products/grid/docs/guide/Grid/quick-start/vue-3) Quick Start guides to learn more.
+Visit our [Reat](https://bryntum.com/products/gantt/docs/guide/Gantt/quick-start/react), [Angular](https://bryntum.com/products/gantt/docs/guide/Gantt/quick-start/angular) 
+and [Vue](https://bryntum.com/products/gantt/docs/guide/Gantt/quick-start/vue-3) Quick Start guides to learn more.
 
 ## Themes
 
-Bryntum Grid offers six built-in themes, each available in both light and dark variants:
+Bryntum Gantt offers six built-in themes, each available in both light and dark variants:
 
 * Svalbard
 * Stockholm
@@ -181,32 +175,47 @@ Bryntum Grid offers six built-in themes, each available in both light and dark v
 * High Contrast
 * Fluent 2
 
-| Svalbard Light | Stockholm Dark |
-|----------------|----------------|
-| ![Svalbard Light](https://bryntum.com/products/grid/docs/data/Grid/images/themes/thumb.svalbard-light.png) | ![Stockholm Dark](https://bryntum.com/products/grid/docs/data/Grid/images/themes/thumb.stockholm-dark.png) |
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 20px 0;">
+  <div>
+    <img src="https://bryntum.com/products/gantt/docs/data/Gantt/images/themes/thumb.svalbard-light.png" alt="Svalbard Light Theme" style="width: 100%; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+    <p align="center"><strong>Svalbard Light</strong></p>
+  </div>
+  <div>
+    <img src="https://bryntum.com/products/gantt/docs/data/Gantt/images/themes/thumb.stockholm-dark.png" alt="Stockholm Dark Theme" style="width: 100%; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+    <p align="center"><strong>Stockholm Dark</strong></p>
+  </div>
+  <div>
+    <img src="https://bryntum.com/products/gantt/docs/data/Gantt/images/themes/thumb.visby-light.png" alt="Visby Light Theme" style="width: 100%; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+    <p align="center"><strong>Visby Light</strong></p>
+  </div>
+  <div>
+    <img src="https://bryntum.com/products/gantt/docs/data/Gantt/images/themes/thumb.material3-dark.png" alt="Material 3 Dark Theme" style="width: 100%; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+    <p align="center"><strong>Material 3 Dark</strong></p>
+  </div>
+  <div>
+    <img src="https://bryntum.com/products/gantt/docs/data/Gantt/images/themes/thumb.high-contrast-light.png" alt="High Contrast Light Theme" style="width: 100%; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+    <p align="center"><strong>High Contrast Light</strong></p>
+  </div>
+  <div>
+    <img src="https://bryntum.com/products/gantt/docs/data/Gantt/images/themes/thumb.fluent2-dark.png" alt="Fluent 2 Dark Theme" style="width: 100%; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+    <p align="center"><strong>Fluent 2 Dark</strong></p>
+  </div>
+</div>
 
-| Visby Light | Material 3 Dark |
-|------------|----------------|
-| ![Visby Light](https://bryntum.com/products/grid/docs/data/Grid/images/themes/thumb.visby-light.png) | ![Material 3 Dark](https://bryntum.com/products/grid/docs/data/Grid/images/themes/thumb.material3-dark.png) |
-
-| High Contrast Light | Fluent 2 Dark |
-|--------------------|----------------|
-| ![High Contrast Light](https://bryntum.com/products/grid/docs/data/Grid/images/themes/thumb.high-contrast-light.png) | ![Fluent 2 Dark](https://bryntum.com/products/grid/docs/data/Grid/images/themes/thumb.fluent2-dark.png) |
-
-Learn more about [theming and customization](https://bryntum.com/products/grid/docs/guide/Grid/customization/styling).
+Learn more about [theming and customization](https://bryntum.com/products/gantt/docs/guide/Gantt/customization/styling).
 
 ## Online references
 
-* [Bryntum npm repository guide](https://bryntum.com/products/grid/docs/guide/Grid/npm-repository)
-* [Bryntum Grid documentation](https://bryntum.com/products/grid/docs/)
-* [Bryntum Grid examples](https://bryntum.com/products/grid/examples/)
+* [Bryntum npm repository guide](https://bryntum.com/products/gantt/docs/guide/Gantt/npm-repository)
+* [Bryntum Gantt documentation](https://bryntum.com/products/gantt/docs/)
+* [Bryntum Gantt examples](https://bryntum.com/products/gantt/examples/)
 * [Bryntum Support Forum](https://forum.bryntum.com/)
 * [Contact us](https://bryntum.com/contact/)
 
 ## License and copyright
 
-Bryntum Grid is commercial software and requires a paid license. Please visit the 
-[Bryntum Grid End User License](https://bryntum.com/products/grid/license/) for the full text of the license.
+Bryntum Gantt is commercial software and requires a paid license. Please visit the 
+[Bryntum Gantt End User License](https://bryntum.com/products/gantt/license/) for the full text of the license.
 
 Copyright © 2009-2026, Bryntum
 All rights reserved.
