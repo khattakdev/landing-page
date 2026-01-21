@@ -6,7 +6,7 @@
 
 Bryntum Gantt is a full featured Gantt chart for project management with support for a big amount of features. It integrates smoothly with React, Vue, Angular, or plain vanilla JS.
 
-For more information about Bryntum Gantt, visit the [Bryntum Gantt site](https://bryntum.com/products/gantt/)
+For more information about Bryntum Gantt, visit the [Bryntum Gantt site](https://bryntum.com/products/gantt/).
 
 <img src="https://bryntum.com/products/gantt/docs/data/Gantt/images/getting-started-result.png" alt="Bryntum Gantt Screenshot">
 
