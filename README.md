@@ -2,7 +2,6 @@
   <a href="https://bryntum.com/" rel="noopener" target="_blank"><img width="200" src="https://bryntum.com/wp-content/uploads/2022/11/RGB_Bryntum-Logo-Blue-1.svg" alt="Bryntum logo"></a>
 </p>
 
-<img src="https://bryntum.com/products/gantt/docs/data/Gantt/images/getting-started-result.png" alt="Bryntum Gantt Screenshot">
 
 <h1 align="center">Bryntum Gantt</h1>
 
@@ -10,6 +9,7 @@ Bryntum Gantt is a full featured Gantt chart for project management with support
 
 For more information about Bryntum Gantt, visit the [Bryntum Gantt site](https://bryntum.com/products/gantt/)
 
+<img src="https://bryntum.com/products/gantt/docs/data/Gantt/images/getting-started-result.png" alt="Bryntum Gantt Screenshot">
 
 
 ## Key Features
