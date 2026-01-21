@@ -2,9 +2,7 @@
   <a href="https://bryntum.com/" rel="noopener" target="_blank"><img width="200" src="https://bryntum.com/wp-content/uploads/2022/11/RGB_Bryntum-Logo-Blue-1.svg" alt="Bryntum logo"></a>
 </p>
 
-<h1 align="center">Bryntum Grid</h1>
-
-Bryntum Grid is a high performance JavaScript data grid component. It integrates smoothly with React, Vue, Angular, or plain vanilla JS.
+**Bryntum Grid** is a high performance JavaScript data grid component. It integrates smoothly with React, Vue, Angular, or plain vanilla JS.
 
 For more information about Bryntum Grid, visit the [Bryntum Grid site](https://bryntum.com/products/grid/)
 
