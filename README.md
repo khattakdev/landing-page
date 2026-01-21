@@ -2,7 +2,6 @@
   <a href="https://bryntum.com/" rel="noopener" target="_blank"><img width="200" src="https://bryntum.com/wp-content/uploads/2022/11/RGB_Bryntum-Logo-Blue-1.svg" alt="Bryntum logo"></a>
 </p>
 
-
 <h1 align="center">Bryntum Gantt</h1>
 
 Bryntum Gantt is a full featured Gantt chart for project management with support for a big amount of features. It integrates smoothly with React, Vue, Angular, or plain vanilla JS.
@@ -10,7 +9,6 @@ Bryntum Gantt is a full featured Gantt chart for project management with support
 For more information about Bryntum Gantt, visit the [Bryntum Gantt site](https://bryntum.com/products/gantt/)
 
 <img src="https://bryntum.com/products/gantt/docs/data/Gantt/images/getting-started-result.png" alt="Bryntum Gantt Screenshot">
-
 
 ## Key Features
 
@@ -177,32 +175,17 @@ Bryntum Gantt offers six built-in themes, each available in both light and dark 
 * High Contrast
 * Fluent 2
 
-<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 20px 0;">
-  <div>
-    <img src="https://bryntum.com/products/gantt/docs/data/Gantt/images/themes/thumb.svalbard-light.png" alt="Svalbard Light Theme" style="width: 100%; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-    <p align="center"><strong>Svalbard Light</strong></p>
-  </div>
-  <div>
-    <img src="https://bryntum.com/products/gantt/docs/data/Gantt/images/themes/thumb.stockholm-dark.png" alt="Stockholm Dark Theme" style="width: 100%; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-    <p align="center"><strong>Stockholm Dark</strong></p>
-  </div>
-  <div>
-    <img src="https://bryntum.com/products/gantt/docs/data/Gantt/images/themes/thumb.visby-light.png" alt="Visby Light Theme" style="width: 100%; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-    <p align="center"><strong>Visby Light</strong></p>
-  </div>
-  <div>
-    <img src="https://bryntum.com/products/gantt/docs/data/Gantt/images/themes/thumb.material3-dark.png" alt="Material 3 Dark Theme" style="width: 100%; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-    <p align="center"><strong>Material 3 Dark</strong></p>
-  </div>
-  <div>
-    <img src="https://bryntum.com/products/gantt/docs/data/Gantt/images/themes/thumb.high-contrast-light.png" alt="High Contrast Light Theme" style="width: 100%; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-    <p align="center"><strong>High Contrast Light</strong></p>
-  </div>
-  <div>
-    <img src="https://bryntum.com/products/gantt/docs/data/Gantt/images/themes/thumb.fluent2-dark.png" alt="Fluent 2 Dark Theme" style="width: 100%; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-    <p align="center"><strong>Fluent 2 Dark</strong></p>
-  </div>
-</div>
+| Svalbard Light | Stockholm Dark |
+|----------------|----------------|
+| ![Svalbard Light](https://bryntum.com/products/grid/docs/data/Grid/images/themes/thumb.svalbard-light.png) | ![Stockholm Dark](https://bryntum.com/products/grid/docs/data/Grid/images/themes/thumb.stockholm-dark.png) |
+
+| Visby Light | Material 3 Dark |
+|------------|----------------|
+| ![Visby Light](https://bryntum.com/products/grid/docs/data/Grid/images/themes/thumb.visby-light.png) | ![Material 3 Dark](https://bryntum.com/products/grid/docs/data/Grid/images/themes/thumb.material3-dark.png) |
+
+| High Contrast Light | Fluent 2 Dark |
+|--------------------|----------------|
+| ![High Contrast Light](https://bryntum.com/products/grid/docs/data/Grid/images/themes/thumb.high-contrast-light.png) | ![Fluent 2 Dark](https://bryntum.com/products/grid/docs/data/Grid/images/themes/thumb.fluent2-dark.png) |
 
 Learn more about [theming and customization](https://bryntum.com/products/gantt/docs/guide/Gantt/customization/styling).
 
