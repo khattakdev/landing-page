@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://bryntum.com/" rel="noopener" target="_blank"><img width="200" src="https://bryntum.com/wp-content/uploads/2022/11/RGB_Bryntum-Logo-Blue-1.svg" alt="Bryntum logo"></a>
+  <a href="https://bryntum.com/" rel="noopener" target="_blank"><img width="300" src="https://bryntum.com/wp-content/uploads/2022/11/RGB_Bryntum-Logo-Blue-1.svg" alt="Bryntum logo"></a>
 </p>
 
 # Bryntum Gantt
